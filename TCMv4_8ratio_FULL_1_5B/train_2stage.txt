@@ -1,0 +1,8 @@
+Training log started at 2025-07-14 09:23:23
+2025-07-14 09:23:23 - Executing: train 1
+2025-07-14 09:24:00 - Executing: train 3
+2025-07-14 10:05:35 - Success: train 3
+2025-07-14 10:05:35 - Executing: special token loss
+2025-07-14 10:05:35 - Success: special token loss = F
+2025-07-14 10:05:35 - Executing: train 4
+2025-07-14 11:25:49 - Success: train 4

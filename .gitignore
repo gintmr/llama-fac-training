@@ -177,3 +177,13 @@ wandb/
 swanlog/
 generated_predictions.jsonl
 predictions_score.json
+
+
+data/
+**/*models*/
+**/*output*/
+**/*checkpoint*/
+nohup.out
+*.csv
+*.jsonl
+*.json

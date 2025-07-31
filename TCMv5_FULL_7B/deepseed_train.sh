@@ -1,0 +1,21 @@
+
+
+deepspeed --num_gpus 4 src/train.py \
+--deepspeed examples/deepspeed/ds_z2_config.json \
+--stage sft \
+--model_name_or_path TCMv2/TCMv2_models  \
+--do_train \
+--dataset TCMv5_below10000 \
+--template deepseek3 \
+--finetuning_type full \
+--output_dir  TCMv5_FULL_7B/outputs_full \
+--overwrite_cache \
+--per_device_train_batch_size 2 \
+--gradient_accumulation_steps 8 \
+--lr_scheduler_type cosine \
+--logging_steps 10 \
+--save_steps 500 \
+--learning_rate 1e-5 \
+--num_train_epochs 2.0 \
+--plot_loss \
+--bf16

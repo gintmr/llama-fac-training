@@ -1,0 +1,19 @@
+deepspeed --num_gpus 8 src/train.py \
+--deepspeed examples/deepspeed/ds_z3_config.json \
+--stage sft \
+--model_name_or_path /mnt/lyc/wuxinrui/DS_Huggingface/llama_precess/DS_Llama_8B_TCMv2  \
+--do_train \
+--dataset TCMv2_longshort_below10000 \
+--template deepseek3 \
+--finetuning_type full \
+--output_dir  FULL_Llama_8B_SFT/outputs_full \
+--overwrite_cache \
+--per_device_train_batch_size 2 \
+--gradient_accumulation_steps 8 \
+--lr_scheduler_type cosine \
+--logging_steps 10 \
+--save_steps 215 \
+--learning_rate 1e-5 \
+--num_train_epochs 2.0 \
+--plot_loss \
+--bf16

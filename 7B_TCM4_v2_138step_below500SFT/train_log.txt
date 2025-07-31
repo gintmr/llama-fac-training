@@ -1,0 +1,5 @@
+Training log started at 2025-05-31 23:37:59
+2025-05-31 23:37:59 - Executing: export PE_MODE=default
+2025-05-31 23:37:59 - Success: export PE_MODE=default
+2025-05-31 23:37:59 - Executing: train default
+2025-05-31 23:38:14 - Failed: llamafactory-cli train

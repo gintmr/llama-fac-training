@@ -1,4 +1,96 @@
 {
+  "TCMv5_below10000":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv5/TCMv5_format_TCMv5_delete_begin.jsonl",
+    "columns":{
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "TCMv4_below10000":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv4/TCMv4_format_TCMv4.jsonl",
+    "columns":{
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "TCMv4_below500":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv4/TCMv4_format_below500_TCMv4.jsonl",
+    "columns":{
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "TCMv4_below1000":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv4/TCMv4_format_below1000_TCMv4.jsonl",
+    "columns":{
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+
+  "TCMv4_format_without_remaining":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv4/TCMv4_format_without_remaining.jsonl",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+
+
+  "TCMv4_format_below10000_TCMv4_8ratio":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv4_8ratio/TCMv4_format_below10000_TCMv4_8ratio.jsonl", 
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+
+  "TCMv4_format_below10000_TCMv4_8ratio_below4k":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv4_8ratio/TCMv4_format_below10000_TCMv4_8ratio_below4k.jsonl",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+
+  "TCMv4_format_below10000_TCMv4_8ratio_below2k":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv4_8ratio/TCMv4_format_below10000_TCMv4_8ratio_below2k.jsonl",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+
+
+  "TCMv4_format_below10000_TCMv4_250token":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv4_250token/TCMv4_format_below10000_TCMv4_250token.jsonl",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+
+  "TCMv4_format_random2000_answer_prompt_generate_below2000_TCMv4":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv4/TCMv4_format_random2000_answer_prompt_generate_below2000_TCMv4.jsonl", 
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "TCMv3_below10000":{
+    "file_name": "/mnt/lyc/wuxinrui/LLaMA-Factory/TCMv3/TCMv3_format_TCMv3.jsonl",
+    "columns":{
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "TCMv2_longshort_below10000":{
+    "file_name": "TCMv2_longshort_below10000.jsonl",
+    "columns":{
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
   "identity": {
     "file_name": "identity.json"
   },

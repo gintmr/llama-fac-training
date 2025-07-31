@@ -1,0 +1,14 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /mnt/lyc/wuxinrui/R1_training/training/TCM4_addthinkprunedata_v2/TCM4_addthinkprunedata_v2_step92_reward_0.798/models ###自己存放本地模型的文件夹
+adapter_name_or_path: TCM4_addthinkprunedata_v2_step92_below500SFT/outputs ### 训练后模型的存储位置
+template: deepseek3 ###qwen系列的template均为这个
+finetuning_type: lora
+trust_remote_code: true
+
+### export
+export_dir: TCM4_addthinkprunedata_v2_step92_below500SFT/models
+export_size: 2
+export_device: cpu
+export_legacy_format: false
