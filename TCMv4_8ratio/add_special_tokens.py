@@ -19,32 +19,33 @@ def gen_special_tokens_json():
 
 if __name__ == "__main__":
     
-    model = AutoModelForCausalLM.from_pretrained("/mnt/lyc/wuxinrui/DS_Huggingface/DS_QW_7B/")
-    tokenizer = AutoTokenizer.from_pretrained("/mnt/lyc/wuxinrui/DS_Huggingface/DS_QW_7B/")
-    print(model.get_input_embeddings())
-    print(model.lm_head)
-    print(len(tokenizer))
+    # model = AutoModelForCausalLM.from_pretrained("/mnt/lyc/wuxinrui/DS_Huggingface/DeepScaleR_1_5B")
+    # tokenizer = AutoTokenizer.from_pretrained("/mnt/lyc/wuxinrui/DS_Huggingface/DeepScaleR_1_5B")
+    # print(model.get_input_embeddings())
+    # print(model.lm_head)
+    # print(len(tokenizer))
 
-    gen_special_tokens_json()
-    with open('TCMv4_8ratio/special_tokens.json') as f:
-        special_tokens = json.load(f)
+    # gen_special_tokens_json()
+    # with open('TCMv4_8ratio/special_tokens.json') as f:
+    #     special_tokens = json.load(f)
         
-    bins_tokens = [
-        special_tokens[f"{i}"] for i in range(7)
-    ]
+    # bins_tokens = [
+    #     special_tokens[f"{i}"] for i in range(7)
+    # ]
 
-    tokenizer.add_special_tokens({'additional_special_tokens': bins_tokens})
-    model.resize_token_embeddings(len(tokenizer))
+    # tokenizer.add_special_tokens({'additional_special_tokens': bins_tokens})
+    # model.resize_token_embeddings(len(tokenizer))
 
-    print('Vocab size after adding special tokens:', len(tokenizer))
+    # print('Vocab size after adding special tokens:', len(tokenizer))
 
-    # # # 保存新的tokenizer和model
-    NEW_MODEL = 'TCMv4_8ratio/7B_TCMv4_8ratio_models'
-    tokenizer.save_pretrained(NEW_MODEL)
-    model.save_pretrained(NEW_MODEL)
+    # # # # 保存新的tokenizer和model
+    # NEW_MODEL = 'TCMv4_8ratio/DeepScaleR_1_5B_TCMv4_8ratio_models'
+    # tokenizer.save_pretrained(NEW_MODEL)
+    # model.save_pretrained(NEW_MODEL)
 
-    model = AutoModelForCausalLM.from_pretrained("TCMv4_8ratio/7B_TCMv4_8ratio_models")
-    tokenizer = AutoTokenizer.from_pretrained("TCMv4_8ratio/7B_TCMv4_8ratio_models")
+
+    model = AutoModelForCausalLM.from_pretrained("TCMv4_8ratio/1_5B_TCMv4_8ratio_models/models")
+    tokenizer = AutoTokenizer.from_pretrained("TCMv4_8ratio/1_5B_TCMv4_8ratio_models/models")
     print(model.get_input_embeddings())
     print(model.lm_head)
     print(len(tokenizer))
